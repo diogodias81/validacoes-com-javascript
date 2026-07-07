@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+        #mensagem-erro{
+            background-color: darkgray;
+            color: blue;
+            padding: 15px;
+            width: 50%;
+            border-radius: 5px;
+        }
+        #mensagem-sucesso{
+             background-color: rgb(0, 238, 255);
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            width: 50%;
+            border-radius: 5px;
+        
+        }
+           
+    </style>
+</head>
+<body>
+    <h1>Manipulando o DOM</h1>
+    <h3>Tags simples</h3>
+
+    <div id="div-teste">Texto padrão da Div</div>
+    <p>P</p>
+    <h2>H2</h2>
+
+    <hr>
+
+    <input type="text" id="campoNome" placeholder="Digite um nome...">
+    <select name="" id=""></select>
+
+
+    <h3>Tags de formulário</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div style="height: 10000px;"></div>
+
+
+
+    <form action="">
+        <h1>Produtos disponiveis</h1>
+
+        <div id="mensagem-erro"></div>
+        <div id="mensagem-sucesso"></div>
+        
+        <br>
+        <div>
+            <label for="">Categoria</label>
+            <select name="categoria" id="categoriaProduto">
+                <option value="">SELECIONE...</option>
+                <option value="biscoito">Biscoito</option>
+                <option value="danone">Danone</option>
+                <option value="coca1l">Coca 1L</option>
+                <option value="coca2l">Coca 2L</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="">Nome produto*</label>
+            <input type="text" id="nomeProduto">
+        </div>
+        <br>
+        <div>
+            <label for="">Quantidade</label>
+            <input type="number" id="quantidade" min="0">
+        </div>
+        <br>
+        <div>
+            <label for="">Preco Produto</label>
+            <input type="number" id="precoProduto" min="0">
+        </div>
+        <br>
+        <button type="button" onclick="cadastrarProduto()">Cadastrar Produto</button>
+    </form>
+    
+    <h3>Resultado:</h3>
+    <div id="resultado"></div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
+    </div>
+    <br>
+    <button type="button" onclick="dadosUsuario()">Enviar</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <div id="resultado"></div>
+
+
+  
