@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario </title>
+</head>
+<body>
+    <h3>Formulario De Seguro de carro</h3>
+    <p>Dados Pessoal do Requisitante</p>
+    <!--id vazio-->
+    
+    <div id="mensagemErro"></div>
+    <div id="mensagemSucesso"></div>
+    <form action="">
+        <div>
+            <label for="">Nome*:</label>
+            <input type="text" id="nomeUsuario">
+        </div>
+        <br>
+        <div>
+            <label for="">Telefone*:</label>
+            <input type="text" id="telefoneUsuario" maxlength="11">
+        </div>
+        <br>
+        <div>
+            <label for="">Idade*:</label>
+            <input type="text" id="idadeUsuario" maxlength="2">
+        </div>
+        <br>
+        <div>
+            <label for="">CPF*:</label>
+            <input type="text" id="cpfUsuario" maxlength="11">
+        </div>
+        <br>
+        <div>
+            <label for="">Contato Emergencia*:</label>
+            <input type="text" id="contatoEmergencia" maxlength="11">
+        </div>
+        <br>
+        <div>
+            <label for="">Nome Mãe*</label>
+            <input type="text" id="nomeMae">
+        </div>
+        <br>
+        <div>
+            <label for="">Nome pai*</label>
+            <input type="text" id="nomePai">
+        </div>
+        <br>
+        <h3>Dados do Carro</h3>
+        <div>
+            <label for="">Marca*:</label>
+            <select name="" id="campoMarca">
+                <option value="">SELECIONE...</option>
+                <option value="Chevro">Chevrolet</option>
+                <option value="byd">BYD</option>
+                <option value="ford">FORD</option>
+                <option value="lambo">Lamborghini</option>
+                <option value="bmw">BMW</option>
+            </select>
+        </div>
+        <br>
+        
+        <button type="button" onclick="enviarDados()">Enviar</button>
+         <h3>* Significa que os campos sao Obrigatorios!</h3>
+        <h3>Resultado:</h3>
+        <div id="resultado"></div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

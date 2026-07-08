@@ -10,42 +10,56 @@ function enviarCampo(){
     let mensagemErro = document.querySelector('#mensagemErro');
     let mensagemSucesso = document.querySelector('#mensagemSucesso');
     
-    
+    //limpa mensagens anteriores antes de uma nova validacao
+    mensagemErro.innerHTML="";
+    mensagemSucesso.innerHTML = "";
+
     if(!nome){
-        mensagemSucesso.innerHTML = "O campo Nome e obrigatorio!";
+        mensagemErro.innerHTML = "O campo Nome e obrigatorio!";
         document.querySelector('#nome').focus();
         return;
         }
     if(!idade){
-        mensagemSucesso.innerHTML = "O campo idade e obrigatorio!";
+        mensagemErro.innerHTML = "O campo idade e obrigatorio!";
         document.querySelector('#idade').focus();
         return;
         }
     if(!localidade){
-        mensagemSucesso.innerHTML = "O campo localidade e obrigatorio!";
+        mensagemErro.innerHTML = "O campo localidade e obrigatorio!";
         document.querySelector('#localidade').focus();
         return;
         }
     if(!nomePai){
-        mensagemSucesso.innerHTML = "O campo Nome Do Pai e obrigatorio!";
+        mensagemErro.innerHTML = "O campo Nome Do Pai e obrigatorio!";
         document.querySelector('#nomePai').focus();
         return;
         }
     if(!nomeMae){
-        mensagemSucesso.innerHTML = "O campo Nome Da Mãe obrigatorio!";
+        mensagemErro.innerHTML = "O campo Nome Da Mãe obrigatorio!";
         document.querySelector('#nomeMae').focus();
         return;
         }
     if(!contato){
-        mensagemSucesso.innerHTML = "O campo telefone e obrigatorio!";
+        mensagemErro.innerHTML = "O campo telefone e obrigatorio!";
         document.querySelector('#telefone').focus();
         return;
         }
 
     if(!email){
-        mensagemSucesso.innerHTML = "O campo email e obrigatorio!";
+        mensagemErro.innerHTML = "O campo email e obrigatorio!";
         document.querySelector('#email').focus();
         return;
         }
     alert("Seus dados foram enviados!")
+    limparCampo();
+}
+function limparCampo(){
+    document.querySelector("#nome").value = "";
+    document.querySelector("#idade").value = "";
+    document.querySelector("#localidade").value = "";
+    document.querySelector("#nomePai").value = "";
+    document.querySelector("#nomeMae").value = "";
+    document.querySelector("#telefone").value = "";
+    document.querySelector("#email").value = "";
+    document.querySelector('#nome').focus();
 }

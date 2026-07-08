@@ -14,59 +14,60 @@ function enviarDados(){
     let mensagemErro = document.querySelector('#mensagem-Erro');
     let mensagemSucesso = document.querySelector('#mensagem-Sucesso');
 
+    mensagemErro.innerHTML = '';
+    mensagemSucesso.innerHTML = '';
 
     if(!nome){
         //alert("O Campo nome esta em branco");
-        mensagemSucesso.innerHTML = "o campo nome e obrigatorio!"
+        mensagemErro.innerHTML = "o campo nome e obrigatorio!"
         document.querySelector('#nome').focus()
         return;
     }
     if(!idade){
         //alert("O Campo idade esta em branco!")/
-        mensagemSucesso.innerHTML = "o Campo idade esta em branco!"
+        mensagemErro.innerHTML = "o Campo idade esta em branco!"
         document.querySelector('#idade').focus()
         return;
     }
     
     if(!cpf){
         //alert("O Campo CPF esta em branco!")
-        mensagemSucesso.innerHTML = "o Campo cpf esta em branco!"
+        mensagemErro.innerHTML = "o Campo cpf esta em branco!"
         document.querySelector('#cpf').focus()
         return;
     }
     if(!contato){
         //alert("O Campo contato esta em branco!")
-        mensagemSucesso.innerHTML = "o Campo Contato esta em branco!"
+        mensagemErro.innerHTML = "o Campo Contato esta em branco!"
         document.querySelector('#telefone').focus()
         return;
     }
      if(!nascimento){
         //alert("O Campo nome esta em branco");
-        mensagemSucesso.innerHTML = "o campo nascimento e obrigatorio!"
+        mensagemErro.innerHTML = "o campo nascimento e obrigatorio!"
         document.querySelector('#dataNascimento').focus()
         return;
     }
     if(!email){
         //alert("O Campo email esta em branco!")
-        mensagemSucesso.innerHTML = "O Campo E-mail esta em branco!"
+        mensagemErro.innerHTML = "O Campo E-mail esta em branco!"
         document.querySelector('#email').focus()
         return;
     }
     if(!mae){
         //alert("O Campo nome Mãe esta em branco!")
-        mensagemSucesso.innerHTML = "O Campo Nome da Mãe esta vazio"
+        mensagemErro.innerHTML = "O Campo Nome da Mãe esta vazio"
         document.querySelector('#nomeMae').focus()
         return;
     }
     if(!pai){
-        mensagemSucesso.innerHTML = "O Campo Nome Do Pai esta vazio"
+        mensagemErro.innerHTML = "O Campo Nome Do Pai esta vazio"
         document.querySelector('#nomePai').focus()
         return;       
     }
 
     if(setorSelecionado.length <= 0) {
-        mensagemSucesso.innerHTML = "O Campo Setor é obrigatório";
+        mensagemErro.innerHTML = "O Campo Setor é obrigatório";
         return;       
     }
-
 }
