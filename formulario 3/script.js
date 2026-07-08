@@ -69,7 +69,7 @@ function enviarDados(){
     `;
     
 
-    document.querySelector('#resultado').innerHTML = document.querySelector('#resultado').innerHTML +textoAtual;
+    document.querySelector('#resultado').innerHTML = document.querySelector('#resultado').innerHTML + textoAtual;
     limparCampos();
 }
 function limparCampos(){
