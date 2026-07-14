@@ -3,7 +3,5 @@ function enviarDados(){
     //2. pegar o valor digitado no input
     //3. mostrar o valor digitado na div #resultado
     let valorDigitado = document.querySelector('#textoInserido').value;
-
-    document.querySelector('#resultado').innerHTML = valorDigitado;
-
+    document.querySelector('#modificar').innerHTML = `testo escrito pelo usuario: ${valorDigitado}`;
 }
