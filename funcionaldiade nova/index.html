@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcao nova</title>
+    <!--linkando a pasta css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--criando um H1-->
+    <h1>Mini formulario</h1>
+    <div id="mensagem" class="mensagem"></div>
+    <!--Criando um um formulario q que linka o meu arquivo do db e criando o onsubimit-->
+    <form action="arquivo.php" onsubmit="salvarFormulario(event)">
+    <!---o on subimit serve para conectar o formulario a funcao do javascript-->
+       
+        <div class="row">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div class="row">
+            <label for="email">E-mail: *</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="row">
+            <label for="email">Senha: *</label>
+            <input type="password" name="senha" id="senha" minlength="8" maxlength="10"  >
+        </div>
+        <div class="row">
+            <label for="cidade">Cidade: *</label>
+            <input type="text" name="cidade" id="cidade" >
+        </div>
+        <div class="row">
+            Os campos com " * " São Obrigatórios
+        </div>
+        
+        <div class="row">
+            <button type="submit" >Enviar</button>
+        </div>
+    </form>
+      <div id="resultado">
+        <h1>Resultado:</h1>
+      </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

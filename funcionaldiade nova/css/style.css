@@ -1,0 +1,10 @@
+.row{
+    margin-bottom: 1em;
+}
+
+.mensagem{
+    
+    color: rgb(255, 0, 0);
+    padding: 2px;
+    margin: 1px;
+}

@@ -8,7 +8,8 @@ function salvarFormulario(e) {
     const nascimento = document.querySelector('#nascimento').value;
     const senha = document.querySelector('#senha').value;
 
-    const texto = `
+    const texto = 
+    `
     Nome: ${nome} <br>
     Email: ${email} <br>
     Nascimento: ${nascimento} <br>
