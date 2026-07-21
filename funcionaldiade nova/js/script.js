@@ -8,13 +8,14 @@ function salvarFormulario(e){
     const senha = document.querySelector('#senha').value;
     const local = document.querySelector('#cidade').value;
     const mensagem = document.querySelector('#mensagem');
-    //valida se o usuario digitou algumca coisa ou deixou espacos em branco
-
+    //valida se o usuario digitou algo
     if(name ==="" || email ==="" ||senha ==="" || cidade ===""){
         mensagem.innerHTML = "<strong>Preencha os campos!</strong>"
         mensagem.classList ="mensagem"
         return;
     }
+    //criando uma variavel que  armazena os valores usando o `` que sao chamadas de template literals
+    // e interpolando  
     const texto = 
     `
     Nome: ${name}<br>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+</head>
+<body>
+    <h1>Finalizar compra</h1>
+    <form id="form-pagamento" onsubmit="processoPagamento(event)">
+        <div>
+            <label for="metodo">Forma de Pagamento:</label>
+                <select name="" id="metodo">
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="cartao">Cartao de Cŕedito</option>
+                </select>
+        </div>
+        <br>
+        <div>
+            <label for="n-cartao">Numero do Cartão(Apenas se escolher cartão):</label>
+            <input type="text" id="n-cartao">
+        </div>
+        <br>
+        <button type="submit">Confirmar pagamento</button>
+    
+    </form> 
+    <script src="script.js"></script>
+</body>
+</html>
